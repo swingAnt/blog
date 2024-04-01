@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "李君凯的技术博客",
   description: "A VitePress Site",
+  base: "/",
   themeConfig: {
     logo: '/profile.jpeg',
     // https://vitepress.dev/reference/default-theme-config
