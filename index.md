@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: 开始阅读
-      link: /markdown-examples
+      link: /aboutme/0
     - theme: alt
       text: 联系我
       link: /api-examples
