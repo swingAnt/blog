@@ -11,17 +11,17 @@ hero:
   actions:
     - theme: brand
       text: 开始阅读
-      link: /aboutme/0
-    - theme: alt
-      text: 联系我
-      link: /api-examples
+      link: /aboutme/0  
+
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: react
+    details: react由入门到精通
+  - title: vue
+    details: vue由入门到精通
+    - title: 鸿蒙
+    details: 由原理到实践以及部署详细解说
+  - title: 工程化
+    details: 工程化从原理到实践
 ---
 
