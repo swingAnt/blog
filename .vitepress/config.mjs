@@ -27,10 +27,8 @@ export default defineConfig({
           { text: 'HTML', link: '/base/4' },
           { text: 'CSS', link: '/base/css' },
           { text: 'HTTP', link: '/base/http' },
-          { text: 'Web安全', link: '/base/3' },
-          { text: 'git常见命令', link: '/base/2' },
+          { text: 'scroll相关探索', link: '/base/scroll' },
           { text: '谷歌插件开发', link: '/base/google' },
-          { text: '前端线上问题定位', link: '/base/5' },
         ]
       },
 
@@ -74,15 +72,15 @@ export default defineConfig({
       {
         text: 'svelte',
         items: [
-          { text: '整体介绍', link: '/svelte/0' },
-
+          { text: '框架介绍', link: '/svelte/1' },
+          { text: '教程示例', link: '/svelte/2' },
         ]
       },
       {
-        text: 'sloid',
+        text: 'solidjs',
         items: [
-          { text: '整体介绍', link: '/sloid/0' },
-
+          { text: '框架介绍', link: '/sloid/1' },
+          { text: '教程示例', link: '/sloid/2' },
         ]
       },
       {
@@ -97,7 +95,12 @@ export default defineConfig({
       {
         text: '鸿蒙',
         items: [
-          { text: '整体介绍', link: '/harmonyOs/0' },
+          { text: '整体入门', link: '/harmonyOs/0' },
+          { text: '状态管理', link: '/harmonyOs/2' },
+          { text: '渲染控制', link: '/harmonyOs/3' },
+          { text: '进程与线程模型', link: '/harmonyOs/4' },
+          { text: '并发', link: '/harmonyOs/5' },
+          { text: ' 使用 Taro 开发鸿蒙原生应用 ', link: '/harmonyOs/1' }, 
         ]
       },
       {
@@ -130,7 +133,10 @@ export default defineConfig({
       },
           { text: '组件库', link: '/engineering/component' },
           { text: '微前端', link: '/engineering/weiqianduan' },
+          { text: 'git常见命令', link: '/base/2' },
           { text: '前端代码规范', link: '/engineering/lint' },
+          { text: '前端线上问题定位', link: '/base/5' },
+          { text: 'Web安全', link: '/base/3' },
           {
             text: '性能优化',
             items: [
@@ -171,13 +177,103 @@ export default defineConfig({
              { text: '使用 gulp 编译 LESS', link: '/engineering/gulp/chapter5' },
              { text: '使用 gulp 编译 Sass', link: '/engineering/gulp/chapter6' },
              { text: '使用 gulp 构建一个项目', link: '/engineering/gulp/chapter7' },
-
- 
            ]
             },
         ]
       },
-      
+      {
+        text: '知识点考察',
+        items: [
+          { text: '基础篇', items: [
+            { text: '行内元素有哪些？块级元素有哪些？ 空(void)元素有哪些', link: '/face/base/0' },
+            { text: '页面导入样式时，使用link和@import有什么区别', link: '/face/base/1' },
+            { text: 'title与h1的区别、b与strong的区别、i与em的区别', link: '/face/base/2' },
+            { text: 'img标签的title和alt有什么区别',link: '/face/base/3' },
+            { text: 'png、jpg、gif 这些图片格式解释一下，分别什么时候用',link: '/face/base/4' },
+            { text: '介绍一下CSS的盒子模型',link: '/face/base/5' },
+            { text: 'line-height和heigh区别',link: '/face/base/6' },
+            { text: 'CSS选择符有哪些？哪些属性可以继承',link: '/face/base/7' },
+            { text: 'CSS优先级算法如何计算',link: '/face/base/8' },
+            { text: '用CSS画一个三角形',link: '/face/base/9' },
+            { text: '对BFC规范(块级格式化上下文：block formatting context)的理解',link: '/face/base/10' },
+            { text: '清除浮动有哪些方式',link: '/face/base/11' },
+            { text: '闭包',link: '/face/base/13' },
+            { text: 'Javascript垃圾回收方法',link: '/face/base/16' },
+            { text: '防抖与节流',link: '/face/base/14' },
+            { text: '介绍下 Set、Map、WeakSet 和 WeakMap 的区别',link: '/face/base/17' },
+            { text: 'ES5/ES6 的继承除了写法以外还有什么区别',link: '/face/base/18' },
+            
+          ]},
+          { text: 'vue', items:[
+            { text: '手写mini版的MVVM框架', link: '/face/vue/0' },
+            { text: '手写 v-model 数据双向绑定', link: '/face/vue/1' },
+            { text: '使用proxy实现数据监听', link: '/face/vue/2' },
+            { text: 'vue 异步更新原理', link: '/face/vue/3' },
+            { text: 'nextTick为什么要优先使用微任务实现？', link: '/face/vue/4' },
+            { text: 'computed 和 watch的区别', link: '/face/vue/5' },
+            { text: 'vue css scoped', link: '/face/vue/6' },
+            { text: '虚拟dom', link: '/face/vue/7' },
+            { text: 'vuex原理', link: '/face/vue/8' },
+            { text: 'vue-router原理', link: '/face/vue/9' },
+            { text: 'vue3与vue2的区别', link: '/face/vue/10' },
+            { text: 'proxy相比于Object.defineProperty性能的提升有哪些', link: '/face/vue/11' },
+            { text: 'vue中数据是双向绑定的，但是为何数据的变化是单向的，这样的好处是什么', link: '/face/vue/12' },
+         ] },
+          { text: 'react',  items: [
+            { text: 'react diff算法以及原理', link: '/face/react/0' },
+            { text: 'react Fiber', link: '/face/react/1' },
+            { text: 'react中使用了Fiber，为什么vue没有用Fiber？', link: '/face/react/4' },
+            { text: 'react Hooks', link: '/face/react/2' },
+            { text: 'useMemo和useCallback的作用与区别', link: '/face/react/6' },
+            { text: '为什么vue和react都选择了Hooks', link: '/face/react/3' },
+            { text: '为什么react推行函数式组件', link: '/face/react/5' },
+            { text: 'setState 是同步还是异步', link: '/face/react/7' },
+            { text: 'react中的合成事件和原生事件', link: '/face/react/8' },
+            { text: '使用setCount修改数据后，到页面重新渲染，整个流程是怎么样的', link: '/face/react/9' },
+         ] },
+         { text: '计算机网络与安全',  items: [
+          { text: '从输入URL到页面加载发生了什么', link: '/face/net/0' },
+          { text: '三次握手与四次挥手',link: '/face/base/15' },
+          { text: '跨域问题',link: '/face/base/12' },
+          { text: '彻底弄懂cors跨域请求', link: '/face/net/1' },
+          { text: 'WebSocket', link: '/face/net/2' },
+          { text: 'TCP和UDP的区别', link: '/face/net/3' },
+          { text: 'http1、2、3', link: '/base/http' },
+          { text: 'keep-alive 持久连接', link: '/face/net/4' },
+          { text: 'http 各状态码', link: '/face/net/5' },
+          { text: 'DNS解析过程', link: '/face/net/6' },
+          { text: 'sql注入', link: '/face/net/7' },
+          { text: 'XSS(跨站脚本攻击)', link: '/face/net/8' },
+          { text: 'csrf 跨站请求伪造', link: '/face/net/9' },
+          { text: '中间人攻击', link: '/face/net/10' },
+          { text: 'jsonp安全防范', link: '/face/net/11' },
+          { text: '浏览器如何验证ca证书的有效性', link: '/face/net/12' },
+          { text: 'csp内容安全策略', link: '/face/net/13' },
+       ] },
+       { text: '浏览器原理',  items: [
+        { text: 'js的单线程', link: '/face/box/0' },
+        { text: 'js事件循环', link: '/face/box/7' },
+        { text: '线程与进程',link: '/face/box/1' },
+        { text: '浏览器页面渲染机制',link: '/face/box/2' },
+        { text: 'script标签 async defer的区别', link: '/face/box/3' },
+        { text: 'DOM事件流', link: '/face/box/4' },
+        { text: '浏览器空闲时间', link: '/face/box/5' },
+        { text: '浏览器缓存', link: '/face/box/6' },
+     ] },
+         { text: 'node',  items: [
+          { text: 'Node 高并发的原理', link: '/face/node/0' },
+          { text: 'Node 事件循环机制与浏览器的区别', link: '/face/node/1' },
+          { text: 'mongoDb 和mySQL的区别', link: '/face/node/2' },
+          { text: '高并发时的如何正确修改库存', link: '/face/node/3' },
+          { text: 'Redis', link: '/face/node/4' },
+          { text: 'PM2', link: '/face/node/5' },
+          { text: 'node 创建子进程', link: '/face/node/6' },
+       ] },
+         
+
+         { text: '服务端渲染', link: '/face/ssr' },
+        ]
+      },
     ],
 
     socialLinks: [
