@@ -93,6 +93,14 @@ export default defineConfig({
         ]
       },
       {
+        text: '跨端',
+        items: [
+          { text: '框架介绍', link: '/cro/0' },
+          { text: '入门示例', link: '/cro/1' },
+
+        ]
+      },
+      {
         text: '鸿蒙',
         items: [
           { text: '整体入门', link: '/harmonyOs/0' },

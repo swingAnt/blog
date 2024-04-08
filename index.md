@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "互联网前端技术手札"
-  text: "经验教训、读书笔记、个人知识库"
+  text: "经验积累、读书笔记、个人知识库"
   tagline: 技术支撑业务，业务创造价值
   image:
     src: /profile.jpeg
