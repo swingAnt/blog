@@ -19,7 +19,7 @@ features:
     details: react由入门到精通
   - title: vue
     details: vue由入门到精通
-    - title: 鸿蒙
+  - title: 鸿蒙
     details: 由原理到实践以及部署详细解说
   - title: 工程化
     details: 工程化从原理到实践
