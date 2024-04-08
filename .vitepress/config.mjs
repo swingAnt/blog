@@ -131,6 +131,7 @@ export default defineConfig({
           { text: '观察者模式', link: '/design/9' },
         ]
       },
+      { text: '状态管理', link: '/engineering/state' },
           { text: '组件库', link: '/engineering/component' },
           { text: '微前端', link: '/engineering/weiqianduan' },
           { text: 'git常见命令', link: '/base/2' },
@@ -195,14 +196,26 @@ export default defineConfig({
             { text: 'CSS选择符有哪些？哪些属性可以继承',link: '/face/base/7' },
             { text: 'CSS优先级算法如何计算',link: '/face/base/8' },
             { text: '用CSS画一个三角形',link: '/face/base/9' },
+            { text: 'rem、em和px的区别是什么',link: '/face/base/19' },
+            { text: '重绘重排有什么区别',link: '/face/base/20' },
             { text: '对BFC规范(块级格式化上下文：block formatting context)的理解',link: '/face/base/10' },
             { text: '清除浮动有哪些方式',link: '/face/base/11' },
             { text: '闭包',link: '/face/base/13' },
+            { text: '前端的内存泄漏怎么理解',link: '/face/base/21' },
             { text: 'Javascript垃圾回收方法',link: '/face/base/16' },
             { text: '防抖与节流',link: '/face/base/14' },
             { text: '介绍下 Set、Map、WeakSet 和 WeakMap 的区别',link: '/face/base/17' },
             { text: 'ES5/ES6 的继承除了写法以外还有什么区别',link: '/face/base/18' },
+            { text: '原型链',link: '/face/base/22' },
+            { text: '作用域链',link: '/face/base/23' },
+            { text: 'new操作符具体做了什么',link: '/face/base/24' },
+            { text: 'JS是如何实现继承的',link: '/face/base/25' },
+            { text: 'JS的设计原理是什么',link: '/face/base/26' },
+            { text: 'JS中关于this指向的问题',link: '/face/base/27' },
+            { text: 'call,apply,bind区别',link: '/face/base/28' },
+
             
+
           ]},
           { text: 'vue', items:[
             { text: '手写mini版的MVVM框架', link: '/face/vue/0' },
@@ -218,9 +231,14 @@ export default defineConfig({
             { text: 'vue3与vue2的区别', link: '/face/vue/10' },
             { text: 'proxy相比于Object.defineProperty性能的提升有哪些', link: '/face/vue/11' },
             { text: 'vue中数据是双向绑定的，但是为何数据的变化是单向的，这样的好处是什么', link: '/face/vue/12' },
+            { text: '说一下你对vue生命周期的理解', link: '/face/vue/13' },
+            { text: 'vue如何进行组件通信', link: '/face/vue/14' },
+
          ] },
           { text: 'react',  items: [
             { text: 'react diff算法以及原理', link: '/face/react/0' },
+            { text: 'react Redux', link: '/face/react/10' },
+            { text: 'react redux-thunk', link: '/face/react/11' },
             { text: 'react Fiber', link: '/face/react/1' },
             { text: 'react中使用了Fiber，为什么vue没有用Fiber？', link: '/face/react/4' },
             { text: 'react Hooks', link: '/face/react/2' },
