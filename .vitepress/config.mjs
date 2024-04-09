@@ -203,6 +203,7 @@ export default defineConfig({
         text: '知识点考察',
         items: [
           { text: '基础篇', items: [
+            { text: 'ajax是什么？怎么实现的', link: '/face/base/00' },
             { text: '行内元素有哪些？块级元素有哪些？ 空(void)元素有哪些', link: '/face/base/0' },
             { text: '页面导入样式时，使用link和@import有什么区别', link: '/face/base/1' },
             { text: 'title与h1的区别、b与strong的区别、i与em的区别', link: '/face/base/2' },
@@ -234,6 +235,10 @@ export default defineConfig({
             { text: 'JS中关于this指向的问题',link: '/face/base/27' },
             { text: 'call,apply,bind区别',link: '/face/base/28' },
             { text: 'Promise相关',link: '/face/base/32' },
+            { text: '实现一个深拷贝',link: '/face/base/33' },
+            { text: 'es6新特性',link: '/face/base/34' },
+            { text: 'html5有哪些新特性',link: '/face/base/35' },
+            { text: 'CSS3有哪些新特性',link: '/face/base/36' },
 
             
           ]},
