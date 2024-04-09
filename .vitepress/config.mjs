@@ -29,7 +29,7 @@ export default defineConfig({
           { text: 'HTTP', link: '/base/http' },
           { text: 'scroll相关探索', link: '/base/scroll' },
           { text: '谷歌插件开发', link: '/base/google' },
-          { text: '原生实现【前端引导页】功能', link: '/base/guild' },
+          { text: '原生实现【前端引导页】', link: '/base/guild' },
         ]
       },
 
@@ -146,6 +146,8 @@ export default defineConfig({
           { text: 'git常见命令', link: '/base/2' },
           { text: '前端代码规范', link: '/engineering/lint' },
           { text: '前端线上问题定位', link: '/base/5' },
+          { text: '常见的几种开发模式', link: '/engineering/develop' },
+          { text: 'RESTful接口机制', link: '/engineering/restful' },
           { text: 'Web安全', link: '/base/3' },
           {
             text: '性能优化',
@@ -171,7 +173,7 @@ export default defineConfig({
             { text: 'Module、Chunk与Bundle', link: '/engineering/webpack/ModuleChunkBundle' },
             { text: 'webpack', link: '/engineering/webpack/webpack' },
             { text: 'webpack5', link: '/engineering/webpack/webpack5' },
-            { text: '相关优化', link: '/engineering/webpack/toQiuckBuild' },
+            { text: '工程相关优化', link: '/engineering/webpack/toQiuckBuild' },
             { text: '自定义部署插件plugin', link: '/engineering/webpack/plugins' },
           ]
            },
@@ -265,6 +267,7 @@ export default defineConfig({
           { text: '跨域问题',link: '/face/base/12' },
           { text: '彻底弄懂cors跨域请求', link: '/face/net/1' },
           { text: 'WebSocket', link: '/face/net/2' },
+          { text: 'token与jwt的区别', link: '/face/net/14' },
           { text: 'TCP和UDP的区别', link: '/face/net/3' },
           { text: 'http1、2、3', link: '/base/http' },
           { text: 'keep-alive 持久连接', link: '/face/net/4' },
@@ -277,6 +280,7 @@ export default defineConfig({
           { text: 'jsonp安全防范', link: '/face/net/11' },
           { text: '浏览器如何验证ca证书的有效性', link: '/face/net/12' },
           { text: 'csp内容安全策略', link: '/face/net/13' },
+          
        ] },
        { text: '浏览器原理',  items: [
         { text: 'js的单线程', link: '/face/box/0' },
