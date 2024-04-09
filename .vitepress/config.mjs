@@ -29,7 +29,7 @@ export default defineConfig({
           { text: 'HTTP', link: '/base/http' },
           { text: 'scroll相关探索', link: '/base/scroll' },
           { text: '谷歌插件开发', link: '/base/google' },
-          { text: '原生实现【前端引导页】功能', link: '/base/google' },
+          { text: '原生实现【前端引导页】功能', link: '/base/guild' },
         ]
       },
 
