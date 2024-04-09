@@ -30,6 +30,12 @@ export default defineConfig({
           { text: 'scroll相关探索', link: '/base/scroll' },
           { text: '谷歌插件开发', link: '/base/google' },
           { text: '原生实现【前端引导页】', link: '/base/guild' },
+          { text: '懒加载、虚拟列表实现', link: '/base/6' },
+          { text: '超大文件上传', link: '/base/9' },
+          { text: '使用双token实现无感刷新', link: '/base/7' },
+          { text: '最大请求并发数做限制', link: '/base/8' },
+          
+          
         ]
       },
 
@@ -227,7 +233,9 @@ export default defineConfig({
             { text: 'JS的设计原理是什么',link: '/face/base/26' },
             { text: 'JS中关于this指向的问题',link: '/face/base/27' },
             { text: 'call,apply,bind区别',link: '/face/base/28' },
+            { text: 'Promise相关',link: '/face/base/32' },
 
+            
           ]},
           { text: 'vue', items:[
             { text: '手写mini版的MVVM框架', link: '/face/vue/0' },
