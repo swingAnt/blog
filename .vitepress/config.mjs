@@ -29,6 +29,7 @@ export default defineConfig({
           { text: 'HTTP', link: '/base/http' },
           { text: 'scroll相关探索', link: '/base/scroll' },
           { text: '谷歌插件开发', link: '/base/google' },
+          { text: '原生实现【前端引导页】功能', link: '/base/google' },
         ]
       },
 
@@ -199,12 +200,15 @@ export default defineConfig({
             { text: 'title与h1的区别、b与strong的区别、i与em的区别', link: '/face/base/2' },
             { text: 'img标签的title和alt有什么区别',link: '/face/base/3' },
             { text: 'png、jpg、gif 这些图片格式解释一下，分别什么时候用',link: '/face/base/4' },
+            { text: 'vw px rem em是什么',link: '/face/base/19' },
+            { text: 'vw px rem之间的换算',link: '/face/base/30' },
+            { text: '页面多屏适配', link: '/face/base/29' },
+            { text: 'js+rem响应式', link: '/face/base/31' },
             { text: '介绍一下CSS的盒子模型',link: '/face/base/5' },
             { text: 'line-height和heigh区别',link: '/face/base/6' },
             { text: 'CSS选择符有哪些？哪些属性可以继承',link: '/face/base/7' },
             { text: 'CSS优先级算法如何计算',link: '/face/base/8' },
             { text: '用CSS画一个三角形',link: '/face/base/9' },
-            { text: 'rem、em和px的区别是什么',link: '/face/base/19' },
             { text: '重绘重排有什么区别',link: '/face/base/20' },
             { text: '对BFC规范(块级格式化上下文：block formatting context)的理解',link: '/face/base/10' },
             { text: '清除浮动有哪些方式',link: '/face/base/11' },
@@ -221,8 +225,6 @@ export default defineConfig({
             { text: 'JS的设计原理是什么',link: '/face/base/26' },
             { text: 'JS中关于this指向的问题',link: '/face/base/27' },
             { text: 'call,apply,bind区别',link: '/face/base/28' },
-
-            
 
           ]},
           { text: 'vue', items:[
@@ -298,6 +300,8 @@ export default defineConfig({
          
 
          { text: '服务端渲染', link: '/face/ssr' },
+         { text: 'taro3和taro2区别', link: '/face/taro' },
+
         ]
       },
     ],
