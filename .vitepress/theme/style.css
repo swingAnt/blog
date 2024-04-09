@@ -85,11 +85,7 @@
   --vp-button-brand-active-text: var(--vp-c-white);
   --vp-button-brand-active-bg: var(--vp-c-brand-1);
 }
-/* 更改所有 PrismJS 代码块的背景颜色 */  
-pre {  
-  background-color: #d9c25c69 !important;  
 
-}  
 
 /**
  * Component: Home
