@@ -149,12 +149,17 @@ export default defineConfig({
       { text: '状态管理', link: '/engineering/state' },
           { text: '组件库', link: '/engineering/component' },
           { text: '微前端', link: '/engineering/weiqianduan' },
+          { text: '简易脚手架搭建', link: '/engineering/build' },
+          { text: 'jest单测', link: '/engineering/test' },
+          { text: 'GitLab自动化CI/CD', link: '/engineering/build2' },
+          { text: 'Jenkins自动化CI/CD', link: '/engineering/build1' },
           { text: 'git常见命令', link: '/base/2' },
           { text: '前端代码规范', link: '/engineering/lint' },
           { text: '前端线上问题定位', link: '/base/5' },
           { text: '常见的几种开发模式', link: '/engineering/develop' },
           { text: 'RESTful接口机制', link: '/engineering/restful' },
           { text: 'Web安全', link: '/base/3' },
+          { text: '服务端渲染', link: '/face/ssr' },
           {
             text: '性能优化',
             items: [
@@ -261,6 +266,7 @@ export default defineConfig({
 
          ] },
           { text: 'react',  items: [
+            { text: 'react16、17、18变化', link: '/face/react/00' },
             { text: 'react diff算法以及原理', link: '/face/react/0' },
             { text: 'react Redux', link: '/face/react/10' },
             { text: 'react redux-thunk', link: '/face/react/11' },
@@ -316,7 +322,6 @@ export default defineConfig({
        ] },
          
 
-         { text: '服务端渲染', link: '/face/ssr' },
          { text: 'taro3和taro2区别', link: '/face/taro' },
 
         ]

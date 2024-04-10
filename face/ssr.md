@@ -38,3 +38,91 @@ SSR基本交互流程
 3. 在浏览器进行初始化Store的时候，通过window对象进行获取数据在服务端的状态，并且将其注入到store.state状态中，这样能够实现状态统一
 为什么服务端渲染不能调用mounted钩子
 服务端渲染不能调用beforeMount和mounted，Node环境没有document对象，初始化的时候，vue底层会判断当前环境中是否有el这个dom对象，如果没有，就不会执行到beforeMount和mounted这两个钩子函数
+
+
+
+Next.js 是一个基于 React 的框架，它默认支持服务端渲染（SSR）。服务端渲染在服务器端生成 HTML 字符串，然后将其发送到客户端，这样用户可以直接看到渲染好的页面，而不是先看到空白的页面，然后等待 JavaScript 执行完毕后再看到内容。
+
+### Next.js 服务端渲染（SSR）实现教程
+
+1. **安装和设置 Next.js**
+
+如果你还没有安装 Next.js，可以使用 Create Next App 来快速开始。在你的终端或命令提示符中运行以下命令：
+
+
+```bash
+npx create-next-app@latest
+```
+然后按照提示进行操作。
+2. **编写页面**
+
+在 Next.js 中，页面位于 `pages` 目录中。每个 `.js` 或 `.tsx` 文件都映射到一个路由。例如，`pages/index.js` 是应用程序的主页。
+
+在 `pages/index.js` 中，你可以像编写普通的 React 组件一样编写页面。Next.js 会自动处理服务端渲染。
+
+
+```jsx
+// pages/index.js
+import React from 'react';
+
+export default function Home() {
+  return (
+    <div>
+      <h1>Hello, World!</h1>
+    </div>
+  );
+}
+```
+3. **运行应用程序**
+
+在项目的根目录中运行以下命令来启动开发服务器：
+
+
+```bash
+npm run dev
+```
+或者如果你使用 yarn：
+
+
+```bash
+yarn dev
+```
+这将启动一个开发服务器，并在你的浏览器中打开应用程序。由于 Next.js 默认使用服务端渲染，因此你会看到页面内容已经渲染好，而不需要等待 JavaScript 执行。
+4. **自定义服务端渲染**
+
+虽然 Next.js 默认支持服务端渲染，但你也可以通过 `getServerSideProps` 异步函数来自定义服务端渲染的逻辑。这个函数在服务器端运行，并且可以访问请求对象（`req`）和查询参数（`query`）。它返回一个对象，该对象的属性将作为 props 传递给页面组件。
+
+例如，你可以从外部 API 获取数据，并在服务端渲染时将其传递给页面组件：
+
+
+```jsx
+// pages/about.js
+import React from 'react';
+
+export async function getServerSideProps(context) {
+  const res = await fetch('https://api.example.com/data');
+  const data = await res.json();
+
+  return { props: { data } };
+}
+
+export default function About({ data }) {
+  return (
+    <div>
+      <h1>About Page</h1>
+      <p>{data.someField}</p>
+    </div>
+  );
+}
+```
+在这个例子中，`getServerSideProps` 函数从外部 API 获取数据，并将其作为 props 传递给 `About` 组件。这样，当页面在服务器端渲染时，它就已经包含了从 API 获取的数据。
+5. **部署应用程序**
+
+当你准备好部署应用程序时，可以使用 Vercel（Next.js 的官方平台）或其他支持 Next.js 的托管服务。你也可以使用 Docker 或其他方法将其部署到自己的服务器上。
+
+### 注意事项
+
+* 服务端渲染会增加服务器的负载，因为每个请求都需要在服务器端执行 JavaScript 代码。因此，在需要考虑性能的场景中，你可能需要考虑使用其他渲染策略，如静态站点生成（SSG）或静态站点生成与客户端渲染的组合（ISR）。
+* `getServerSideProps` 只能在 `pages` 目录下的页面组件中使用。如果你需要在非页面组件中获取数据，可以考虑使用其他方法，如 Redux、MobX 或 React 的 Context API。
+
+这就是 Next.js 中服务端渲染的基本实现教程和代码示例。通过结合 Next.js 的其他特性和最佳实践，你可以构建出高效、可维护的 React 应用程序。
