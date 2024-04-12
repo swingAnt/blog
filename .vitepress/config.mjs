@@ -313,6 +313,8 @@ export default defineConfig({
             { text: 'react16、17、18变化', link: '/face/react/00' },
             { text: 'Vue 和 react的 虚拟dom 区别', link: '/face/react/12' },
             { text: 'react diff算法以及原理', link: '/face/react/0' },
+            { text: 'react 组件通信方式', link: '/face/react/14' },
+            { text: 'react 逻辑状态复用问题', link: '/face/react/13' },
             { text: 'react Redux', link: '/face/react/10' },
             { text: 'react redux-thunk', link: '/face/react/11' },
             { text: 'react Fiber', link: '/face/react/1' },
