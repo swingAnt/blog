@@ -22,8 +22,11 @@ export default defineConfig({
       },
       {
         text: '前端基础',
+        collapsible: true,
+        collapsed: true,
         items: [
           { text: 'JavaScript', link: '/base/0' },
+          { text: 'TypeScript', link: '/base/ts' },
           { text: 'HTML', link: '/base/4' },
           { text: 'CSS', link: '/base/css' },
           { text: 'HTTP', link: '/base/http' },
@@ -41,6 +44,8 @@ export default defineConfig({
 
       {
         text: 'Vue',
+        collapsible: true,
+        collapsed: true,
         items: [
           { text: 'vue3快速入门', link: '/vue/0' },
           { text: '进阶篇', link: '/vue/1' },
@@ -63,6 +68,8 @@ export default defineConfig({
  
       {
         text: 'React',
+        collapsible: true,
+        collapsed: true,
         items: [
           { text: 'React简介', link: '/react/0' },
           { text: '安装与配置', link: '/react/1' },
@@ -78,6 +85,8 @@ export default defineConfig({
       },
       {
         text: 'svelte',
+        collapsible: true,
+        collapsed: true,
         items: [
           { text: '框架介绍', link: '/svelte/1' },
           { text: '教程示例', link: '/svelte/2' },
@@ -85,6 +94,8 @@ export default defineConfig({
       },
       {
         text: 'solidjs',
+        collapsible: true,
+        collapsed: true,
         items: [
           { text: '框架介绍', link: '/sloid/1' },
           { text: '教程示例', link: '/sloid/2' },
@@ -92,6 +103,8 @@ export default defineConfig({
       },
       {
         text: 'nextjs',
+        collapsible: true,
+        collapsed: true,
         items: [
           { text: '框架介绍', link: '/nextjs/0' },
           { text: '入门示例', link: '/nextjs/1' },
@@ -101,6 +114,8 @@ export default defineConfig({
       },
       {
         text: '跨端',
+        collapsible: true,
+        collapsed: true,
         items: [
           { text: '框架介绍', link: '/cro/0' },
           { text: '入门示例', link: '/cro/1' },
@@ -109,6 +124,8 @@ export default defineConfig({
       },
       {
         text: '鸿蒙',
+        collapsible: true,
+        collapsed: true,
         items: [
           { text: '整体入门', link: '/harmonyOs/0' },
           { text: '状态管理', link: '/harmonyOs/2' },
@@ -120,6 +137,8 @@ export default defineConfig({
       },
       {
         text: '低代码',
+        collapsible: true,
+        collapsed: true,
         items: [
           { text: '低代码介绍', link: '/didaima/0' },
           { text: 'ECharts', link: '/didaima/1' },
@@ -131,9 +150,13 @@ export default defineConfig({
       
       {
         text: '工程化',
+        collapsible: true,
+        collapsed: true,
         items: [
                 {
         text: '设计模式',
+        collapsible: true,
+        collapsed: true,
         items: [
           { text: '单例模式', link: '/design/1' },
           { text: '策略模式', link: '/design/2' },
@@ -154,6 +177,7 @@ export default defineConfig({
           { text: 'GitLab自动化CI/CD', link: '/engineering/build2' },
           { text: 'Jenkins自动化CI/CD', link: '/engineering/build1' },
           { text: 'git常见命令', link: '/base/2' },
+          { text: 'npm,pnpm,yarn', link: '/engineering/37' },
           { text: '前端代码规范', link: '/engineering/lint' },
           { text: '前端线上问题定位', link: '/base/5' },
           { text: '常见的几种开发模式', link: '/engineering/develop' },
@@ -162,6 +186,8 @@ export default defineConfig({
           { text: '服务端渲染', link: '/face/ssr' },
           {
             text: '性能优化',
+            collapsible: true,
+            collapsed: true,
             items: [
               { text: '构建阶段', link: '/build/0' },
               { text: '加载阶段', link: '/build/1' },
@@ -171,6 +197,8 @@ export default defineConfig({
           },
           {
             text: '监控',
+            collapsible: true,
+            collapsed: true,
             items: [
               { text: '页面监控', link: '/jiankong/0' },
               { text: '数据埋点', link: '/jiankong/1' },
@@ -178,6 +206,8 @@ export default defineConfig({
           },
           { text: 'vite', link: '/engineering/vite' },
           { text: 'webpack', 
+          collapsible: true,
+          collapsed: true,
           items: [
             { text: 'plugin', link: '/engineering/webpack/plugin' },
             { text: 'bable', link: '/engineering/webpack/babel' },
@@ -191,6 +221,8 @@ export default defineConfig({
            { text: 'vite', link: '/engineering/vite' },
            { text: 'vite和webpack对比', link: '/engineering/viteAndWebpack' },
            { text: 'gulp', 
+           collapsible: true,
+           collapsed: true,
            items: [
              { text: 'gulp 入门指南', link: '/engineering/gulp/README' },
              { text: '安装 Node 和 gulp', link: '/engineering/gulp/chapter1' },
@@ -206,9 +238,16 @@ export default defineConfig({
       },
       {
         text: '知识点考察',
+        collapsible: true,
+        collapsed: true,
         items: [
-          { text: '基础篇', items: [
+          { text: '基础篇',
+          collapsible: true,
+          collapsed: true, 
+          items: [
             { text: 'ajax是什么？怎么实现的', link: '/face/base/00' },
+            { text: 'var,let,const区别', link: '/face/base/38' },
+            { text: 'async以及defer的区别', link: '/face/base/39' },
             { text: '行内元素有哪些？块级元素有哪些？ 空(void)元素有哪些', link: '/face/base/0' },
             { text: '页面导入样式时，使用link和@import有什么区别', link: '/face/base/1' },
             { text: 'title与h1的区别、b与strong的区别、i与em的区别', link: '/face/base/2' },
@@ -244,10 +283,12 @@ export default defineConfig({
             { text: 'es6新特性',link: '/face/base/34' },
             { text: 'html5有哪些新特性',link: '/face/base/35' },
             { text: 'CSS3有哪些新特性',link: '/face/base/36' },
-
-            
+     
           ]},
-          { text: 'vue', items:[
+          { text: 'vue',
+          collapsible: true,
+          collapsed: true,
+          items:[
             { text: '手写mini版的MVVM框架', link: '/face/vue/0' },
             { text: '手写 v-model 数据双向绑定', link: '/face/vue/1' },
             { text: '使用proxy实现数据监听', link: '/face/vue/2' },
@@ -265,8 +306,12 @@ export default defineConfig({
             { text: 'vue如何进行组件通信', link: '/face/vue/14' },
 
          ] },
-          { text: 'react',  items: [
+          { text: 'react', 
+          collapsible: true,
+          collapsed: true,
+          items: [
             { text: 'react16、17、18变化', link: '/face/react/00' },
+            { text: 'Vue 和 react的 虚拟dom 区别', link: '/face/react/12' },
             { text: 'react diff算法以及原理', link: '/face/react/0' },
             { text: 'react Redux', link: '/face/react/10' },
             { text: 'react redux-thunk', link: '/face/react/11' },
@@ -280,7 +325,10 @@ export default defineConfig({
             { text: 'react中的合成事件和原生事件', link: '/face/react/8' },
             { text: '使用setCount修改数据后，到页面重新渲染，整个流程是怎么样的', link: '/face/react/9' },
          ] },
-         { text: '计算机网络与安全',  items: [
+         { text: '计算机网络与安全',  
+         collapsible: true,
+         collapsed: true,
+         items: [
           { text: '从输入URL到页面加载发生了什么', link: '/face/net/0' },
           { text: '三次握手与四次挥手',link: '/face/base/15' },
           { text: '跨域问题',link: '/face/base/12' },
@@ -301,7 +349,10 @@ export default defineConfig({
           { text: 'csp内容安全策略', link: '/face/net/13' },
           
        ] },
-       { text: '浏览器原理',  items: [
+       { text: '浏览器原理',
+       collapsible: true,
+       collapsed: true,  
+       items: [
         { text: 'js的单线程', link: '/face/box/0' },
         { text: 'js事件循环', link: '/face/box/7' },
         { text: '线程与进程',link: '/face/box/1' },
@@ -311,7 +362,10 @@ export default defineConfig({
         { text: '浏览器空闲时间', link: '/face/box/5' },
         { text: '浏览器缓存', link: '/face/box/6' },
      ] },
-         { text: 'node',  items: [
+         { text: 'node', 
+         collapsible: true,
+         collapsed: true,
+          items: [
           { text: 'Node 高并发的原理', link: '/face/node/0' },
           { text: 'Node 事件循环机制与浏览器的区别', link: '/face/node/1' },
           { text: 'mongoDb 和mySQL的区别', link: '/face/node/2' },
@@ -320,9 +374,27 @@ export default defineConfig({
           { text: 'PM2', link: '/face/node/5' },
           { text: 'node 创建子进程', link: '/face/node/6' },
        ] },
-         
+  
+         { text: '性能篇',
+         collapsible: true,
+         collapsed: true, 
+         items: [
+          { text: '如何应对某一时段流量比较大的情况', link: '/face/0' },
+          { text: '为什么日志打印较多会影响服务器性能', link: '/face/0' },
+            { text: 'taro3和taro2区别', link: '/face/taro' },
+         ] },
+     
+       { text: '算法以及代码实现篇',
+       collapsible: true,
+       collapsed: true, 
+       items: [
+         { text: '检查符号闭合', link: '/face/count/0' },
+         { text: '转化成RMB形式', link: '/face/count/1' },
+         { text: '手动实现发布订阅', link: '/face/count/2' },
+         { text: '数组扁平化', link: '/face/count/3' },
 
-         { text: 'taro3和taro2区别', link: '/face/taro' },
+       ] },
+   
 
         ]
       },
