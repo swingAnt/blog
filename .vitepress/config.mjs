@@ -141,10 +141,11 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: '低代码介绍', link: '/didaima/0' },
+          { text: '组件的动态懒加载和渲染', link: '/didaima/4' },
           { text: 'ECharts', link: '/didaima/1' },
           { text: 'G6', link: '/didaima/2' },
           { text: 'd3.js', link: '/didaima/3' },
-
+          
         ]
       },
       
@@ -390,10 +391,13 @@ export default defineConfig({
        collapsible: true,
        collapsed: true, 
        items: [
+
          { text: '检查符号闭合', link: '/face/count/0' },
          { text: '转化成RMB形式', link: '/face/count/1' },
          { text: '手动实现发布订阅', link: '/face/count/2' },
          { text: '数组扁平化', link: '/face/count/3' },
+         { text: '原生实现监听select之外区域，关闭下拉框效果', link: '/face/count/4' },
+         { text: '异步任务3秒超时控制', link: '/face/count/5' },
 
        ] },
    
