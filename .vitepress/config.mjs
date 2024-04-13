@@ -142,6 +142,7 @@ export default defineConfig({
         items: [
           { text: '低代码介绍', link: '/didaima/0' },
           { text: '组件的动态懒加载和渲染', link: '/didaima/4' },
+          { text: '前端组件在浏览器兼容问题', link: '/didaima/5' },
           { text: 'ECharts', link: '/didaima/1' },
           { text: 'G6', link: '/didaima/2' },
           { text: 'd3.js', link: '/didaima/3' },
@@ -267,6 +268,8 @@ export default defineConfig({
             { text: '对BFC规范(块级格式化上下文：block formatting context)的理解',link: '/face/base/10' },
             { text: '清除浮动有哪些方式',link: '/face/base/11' },
             { text: '闭包',link: '/face/base/13' },
+            { text: 'react闭包',link: '/face/base/42' }, 
+            { text: 'react 闭包陷阱',link: '/face/base/43' }, 
             { text: '前端的内存泄漏怎么理解',link: '/face/base/21' },
             { text: 'Javascript垃圾回收方法',link: '/face/base/16' },
             { text: '防抖与节流',link: '/face/base/14' },
@@ -275,7 +278,7 @@ export default defineConfig({
             { text: '原型链',link: '/face/base/22' },
             { text: '作用域链',link: '/face/base/23' },
             { text: 'new操作符具体做了什么',link: '/face/base/24' },
-            { text: 'JS是如何实现继承的',link: '/face/base/25' },
+            { text: 'JS的继承方式有哪些，es6继承',link: '/face/base/25' },
             { text: 'JS的设计原理是什么',link: '/face/base/26' },
             { text: 'JS中关于this指向的问题',link: '/face/base/27' },
             { text: 'call,apply,bind区别',link: '/face/base/28' },
@@ -284,7 +287,8 @@ export default defineConfig({
             { text: 'es6新特性',link: '/face/base/34' },
             { text: 'html5有哪些新特性',link: '/face/base/35' },
             { text: 'CSS3有哪些新特性',link: '/face/base/36' },
-     
+            { text: 'js实现继承的方式有哪些',link: '/face/base/41' },
+
           ]},
           { text: 'vue',
           collapsible: true,
@@ -298,13 +302,22 @@ export default defineConfig({
             { text: 'computed 和 watch的区别', link: '/face/vue/5' },
             { text: 'vue css scoped', link: '/face/vue/6' },
             { text: '虚拟dom', link: '/face/vue/7' },
+            { text: 'vuex 属性有哪些', link: '/face/vue/21' },
             { text: 'vuex原理', link: '/face/vue/8' },
+            { text: 'vue路由守卫', link: '/face/vue/17' },
             { text: 'vue-router原理', link: '/face/vue/9' },
+            { text: 'vue路由的hash模式和history模式有什么区别', link: '/face/vue/15' },
+            { text: 'vue路由拦截是怎么实现的', link: '/face/vue/16' },
+            { text: 'vue中如何做强制刷新', link: '/face/vue/18' },
             { text: 'vue3与vue2的区别', link: '/face/vue/10' },
             { text: 'proxy相比于Object.defineProperty性能的提升有哪些', link: '/face/vue/11' },
             { text: 'vue中数据是双向绑定的，但是为何数据的变化是单向的，这样的好处是什么', link: '/face/vue/12' },
-            { text: '说一下你对vue生命周期的理解', link: '/face/vue/13' },
+            { text: 'vue生命周期', link: '/face/vue/13' },
             { text: 'vue如何进行组件通信', link: '/face/vue/14' },
+            { text: 'vue的过滤器怎么使用', link: '/face/vue/19' },
+            { text: 'vue如何封装一个组件', link: '/face/vue/20' },
+
+            
 
          ] },
           { text: 'react', 
@@ -341,11 +354,12 @@ export default defineConfig({
           { text: 'TCP和UDP的区别', link: '/face/net/3' },
           { text: 'http1、2、3', link: '/base/http' },
           { text: 'keep-alive 持久连接', link: '/face/net/4' },
+          { text: 'http 请求头', link: '/face/net/15' },
           { text: 'http 各状态码', link: '/face/net/5' },
           { text: 'DNS解析过程', link: '/face/net/6' },
           { text: 'sql注入', link: '/face/net/7' },
           { text: 'XSS(跨站脚本攻击)', link: '/face/net/8' },
-          { text: 'csrf 跨站请求伪造', link: '/face/net/9' },
+          { text: 'csrf 跨站请求伪造', link: '/face/net/9' }, 
           { text: '中间人攻击', link: '/face/net/10' },
           { text: 'jsonp安全防范', link: '/face/net/11' },
           { text: '浏览器如何验证ca证书的有效性', link: '/face/net/12' },
@@ -383,8 +397,14 @@ export default defineConfig({
          collapsed: true, 
          items: [
           { text: '如何应对某一时段流量比较大的情况', link: '/face/0' },
-          { text: '为什么日志打印较多会影响服务器性能', link: '/face/0' },
+          { text: '为什么日志打印较多会影响服务器性能', link: '/face/1' },
+          { text: '前端大数据量性能优化', link: '/face/2' },
+          { text: 'react性能优化都有哪些方案', link: '/face/3' },
+          { text: 'vue性能优化都有哪些方案', link: '/face/5' },
+          { text: '如何处理浏览器兼容问题', link: '/face/4' },
             { text: 'taro3和taro2区别', link: '/face/taro' },
+            
+
          ] },
      
        { text: '算法以及代码实现篇',
@@ -398,8 +418,10 @@ export default defineConfig({
          { text: '数组扁平化', link: '/face/count/3' },
          { text: '原生实现监听select之外区域，关闭下拉框效果', link: '/face/count/4' },
          { text: '异步任务3秒超时控制', link: '/face/count/5' },
+         { text: 'js快速排序', link: '/face/count/6' },
 
        ] },
+
    
 
         ]
