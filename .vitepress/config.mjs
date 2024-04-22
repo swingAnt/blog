@@ -43,7 +43,19 @@ export default defineConfig({
           
         ]
       },
-
+      {
+        text: '鸿蒙',
+        collapsible: true,
+        collapsed: true,
+        items: [
+          { text: '整体入门', link: '/harmonyOs/0' },
+          { text: '状态管理', link: '/harmonyOs/2' },
+          { text: '渲染控制', link: '/harmonyOs/3' },
+          { text: '进程与线程模型', link: '/harmonyOs/4' },
+          { text: '并发', link: '/harmonyOs/5' },
+          { text: ' 使用 Taro 开发鸿蒙原生应用 ', link: '/harmonyOs/1' }, 
+        ]
+      },
       {
         text: 'Vue',
         collapsible: true,
@@ -124,19 +136,7 @@ export default defineConfig({
 
         ]
       },
-      {
-        text: '鸿蒙',
-        collapsible: true,
-        collapsed: true,
-        items: [
-          { text: '整体入门', link: '/harmonyOs/0' },
-          { text: '状态管理', link: '/harmonyOs/2' },
-          { text: '渲染控制', link: '/harmonyOs/3' },
-          { text: '进程与线程模型', link: '/harmonyOs/4' },
-          { text: '并发', link: '/harmonyOs/5' },
-          { text: ' 使用 Taro 开发鸿蒙原生应用 ', link: '/harmonyOs/1' }, 
-        ]
-      },
+     
       {
         text: '低代码',
         collapsible: true,
@@ -145,6 +145,7 @@ export default defineConfig({
           { text: '低代码介绍', link: '/didaima/0' },
           { text: '组件的动态懒加载和渲染', link: '/didaima/4' },
           { text: '前端组件在浏览器兼容问题', link: '/didaima/5' },
+          { text: 'vue组件', link: '/didaima/6' },
           { text: 'ECharts', link: '/didaima/1' },
           { text: 'G6', link: '/didaima/2' },
           { text: 'd3.js', link: '/didaima/3' },
@@ -173,8 +174,9 @@ export default defineConfig({
           { text: '观察者模式', link: '/design/9' },
         ]
       },
-      { text: '状态管理', link: '/engineering/state' },
+          { text: '状态管理', link: '/engineering/state' },
           { text: '组件库', link: '/engineering/component' },
+          { text: '主题色', link: '/engineering/theme' },
           { text: '微前端', link: '/engineering/weiqianduan' },
           { text: '简易脚手架搭建', link: '/engineering/build' },
           { text: 'jest单测', link: '/engineering/test' },
@@ -184,7 +186,9 @@ export default defineConfig({
           { text: 'npm,pnpm,yarn', link: '/engineering/37' },
           { text: '前端代码规范', link: '/engineering/lint' },
           { text: '前端线上问题定位', link: '/base/5' },
-          { text: '常见的几种开发模式', link: '/engineering/develop' },
+          { text: '项目排期相关模式', link: '/engineering/develop' },
+          { text: '技术选型与架构设计', link: '/engineering/manage' },
+          { text: '小程序', link: '/engineering/flow' },
           { text: 'RESTful接口机制', link: '/engineering/restful' },
           { text: 'Web安全', link: '/base/3' },
           { text: '服务端渲染', link: '/face/ssr' },
@@ -213,8 +217,11 @@ export default defineConfig({
           collapsible: true,
           collapsed: true,
           items: [
+
             { text: 'plugin', link: '/engineering/webpack/plugin' },
             { text: 'bable', link: '/engineering/webpack/babel' },
+            { text: 'loader', link: '/engineering/webpack/loader' },
+
             { text: 'Module、Chunk与Bundle', link: '/engineering/webpack/ModuleChunkBundle' },
             { text: 'webpack', link: '/engineering/webpack/webpack' },
             { text: 'webpack5', link: '/engineering/webpack/webpack5' },
@@ -323,8 +330,8 @@ export default defineConfig({
             { text: 'vue如何进行组件通信', link: '/face/vue/14' },
             { text: 'vue的过滤器怎么使用', link: '/face/vue/19' },
             { text: 'vue如何封装一个组件', link: '/face/vue/20' },
+            { text: 'vue单项数据流', link: '/face/vue/22' },
 
-            
 
          ] },
           { text: 'react', 
@@ -371,7 +378,10 @@ export default defineConfig({
           { text: 'jsonp安全防范', link: '/face/net/11' },
           { text: '浏览器如何验证ca证书的有效性', link: '/face/net/12' },
           { text: 'csp内容安全策略', link: '/face/net/13' },
+          { text: '前端安全', link: '/face/net/16' },
+
           
+
        ] },
        { text: '浏览器原理',
        collapsible: true,
@@ -409,7 +419,8 @@ export default defineConfig({
           { text: 'react性能优化都有哪些方案', link: '/face/3' },
           { text: 'vue性能优化都有哪些方案', link: '/face/5' },
           { text: '如何处理浏览器兼容问题', link: '/face/4' },
-            { text: 'taro3和taro2区别', link: '/face/taro' },
+          { text: '首屏优化该如何去做', link: '/face/6' },
+          { text: 'taro3和taro2区别', link: '/face/taro' },
             
 
          ] },
@@ -425,7 +436,12 @@ export default defineConfig({
          { text: '数组扁平化', link: '/face/count/3' },
          { text: '原生实现监听select之外区域，关闭下拉框效果', link: '/face/count/4' },
          { text: '异步任务3秒超时控制', link: '/face/count/5' },
-         { text: 'js快速排序', link: '/face/count/6' },
+         { text: '冒泡排序', link: '/face/count/11' },
+         { text: '快速排序', link: '/face/count/6' },
+         { text: 'reduce实现map', link: '/face/count/7' },
+         { text: '手机号验证', link: '/face/count/8' },
+         { text: '反转链表', link: '/face/count/9' },
+         { text: '遍历二叉树', link: '/face/count/10' },
 
        ] },
 
