@@ -114,7 +114,7 @@ this.shadowRoot.innerHTML=`
 
   <img src="/q9.png">
 
-  <img src="/q1.png">
+
 
   <img src="/q10.png">
 
@@ -124,7 +124,6 @@ this.shadowRoot.innerHTML=`
 
   <img src="/q13.png">
 
-  <img src="/q1.png">
 
   <img src="/q14.png">
 
@@ -214,3 +213,78 @@ Quarkd 使用 MIT 许可证进行开源，你可以在遵守许可证的前提�
 - 示例：<https://hellof2e.github.io/quark-design/examples/>（假设有官方示例网站）
 
 请注意，以上链接和文档内容仅为示例，实际使用时请参考项目仓库中的最新信息和文档。
+
+## QuarkC支持小程序
+QuarkC 是一个支持小程序和移动端原生应用开发的跨平台框架。通过 QuarkC，你可以开发一次组件，然后在小程序和移动端应用中都能使用。下面是一个简单的示例，演示如何使用 QuarkC 开发组件，并在微信小程序中使用该组件，并调用其原生能力。
+
+首先，我们创建一个简单的组件，比如一个显示按钮的组件，然后在微信小程序中使用它，并调用其原生能力。
+```javascript
+    // 在 QuarkC 中创建一个简单的组件 ButtonComponent
+    
+    // ButtonComponent.quarkc
+    
+    import { createComponent } from '@quarkc/core';
+    
+    export default createComponent({
+      data: {
+        buttonText: 'Click Me!'
+      },
+      methods: {
+        handleClick() {
+          wx.showToast({
+            title: 'Button Clicked!',
+            icon: 'none',
+          });
+        },
+      },
+      render() {
+        return (
+          <button onClick={this.handleClick}>{this.data.buttonText}</button>
+        );
+      }
+    });
+```    
+
+在上面的示例中，我们创建了一个名为 `ButtonComponent` 的组件，用于显示按钮并在点击时弹出微信小程序原生的提示框。
+
+接下来，我们将在微信小程序中使用这个组件，并调用其原生能力。
+```javascript
+    <!-- 在微信小程序中使用组件并调用原生能力 -->
+    
+    <!-- index.wxml -->
+    
+    <view class="container">
+      <!-- 在页面中使用组件 -->
+      <import src="ButtonComponent.quarkc" />
+      <button-component></button-component>
+    </view>
+    
+
+    // 在微信小程序中使用组件并调用原生能力
+    
+    // index.js
+    
+    Page({
+      onLoad() {
+        // 注册组件
+        const ButtonComponent = require('ButtonComponent.quarkc');
+        const buttonComponent = ButtonComponent.default;
+        this.setData({
+          buttonComponent
+        });
+      }
+    });
+```
+
+在上面的示例中，我们通过 QuarkC 的 `createComponent` 方法创建了一个 `ButtonComponent` 实例，并在微信小程序页面中使用它。
+
+通过 QuarkC，你可以在微信小程序中使用组件并调用其原生能力。当然，在实际开发中，你可能还需要处理一些微信小程序平台特有的适配工作， QuarkC 提供了一种可行的方案来实现组件的跨平台开发和使用。
+
+## 集成小程序原理
+在微信小程序中，QuarkC 开发的组件不需要转换成 .wxml 文件，而 Omi 和 Stencil 的组件需要转换的原因主要是因为它们采用了不同的技术架构和开发方式。
+
+QuarkC 是微信小程序原生支持的一种开发方式，它使用类似 HTML 的语法来描述组件的结构，并且支持直接在 .wxml 文件中编写组件的模板代码。因此，当使用 QuarkC 开发组件时，可以直接在 .wxml 文件中编写组件的结构和样式，无需额外的转换步骤。
+
+而 Omi 和 Stencil 是基于 Web 技术的前端框架，它们使用的是类似于 React 的虚拟 DOM 技术来管理组件的状态和渲染。在微信小程序中使用 Omi 或 Stencil 开发的组件时，需要将它们的组件转换成微信小程序能够识别的 .wxml 文件，以便在小程序中使用。
+
+因此，QuarkC、Omi 和 Stencil 采用了不同的技术架构和开发方式，导致在微信小程序中使用它们开发的组件时，需要的处理方式也不同。QuarkC 的组件可以直接在 .wxml 文件中编写，而 Omi 和 Stencil 的组件需要经过转换成 .wxml 文件后才能在微信小程序中使用。
